@@ -1,0 +1,18 @@
+{
+	"manifest_version": 2,
+	"name": "Useful Extension",
+	"version": "1.0.0",
+	"icons" : {
+	    "48" : "Dog.png"
+	},
+	"description": "Chrome Extension for extracting Dog pictures :)",
+	  "background": {
+	    "scripts": ["background.js"]
+	  },
+	"content_scripts": [
+	  {
+	    "matches": ["*://*/*"],
+	    "js": ["content.js"]
+	  }
+	]
+}
